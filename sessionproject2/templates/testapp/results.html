@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Results</title>
+</head>
+<body>
+	<h1>Thanks for information...please confirm</h1>
+	<ul>
+		{%for key,value in request.session.items%}
+		<li><h2>{{key|upper}}:{{value|title}}</h2></li>
+		{%endfor%}
+		
+	</ul>
+
+</body>
+</html>
